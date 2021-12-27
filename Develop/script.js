@@ -6,8 +6,8 @@ const hourArray = [nineam, tenam, elevenam, twelve, onepm, twopm, threepm, fourp
 
 setInterval(function() {
 
-    let currentTime = moment();
-    $(#currentDay).text(today.format("dddd, MMMM Do"));
+    let now = moment();
+    $("#currentTime").text(today.format("dddd, MMMM Do"));
 }, 1000);
 
 
