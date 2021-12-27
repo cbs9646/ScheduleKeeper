@@ -1,3 +1,8 @@
+const hourArray = [nineam, tenam, elevenam, twelve, onepm, twopm, threepm, fourpm];
+
+
+
+
 
 setInterval(function() {
 
@@ -18,21 +23,21 @@ setInterval(function() {
 
 
 
-let nine = document.querySelector("#nine");
+let nineam = document.querySelector("#nine");
 nine.time = 9;
-let ten = document.querySelector("#ten");
+let tenam = document.querySelector("#ten");
 nine.time = 10;
-let eleven = document.querySelector("#eleven");
+let elevenam = document.querySelector("#eleven");
 nine.time = 11;
 let twelve = document.querySelector("#twelve");
 nine.time = 12;
-let one = document.querySelector("#one");
+let onepm = document.querySelector("#one");
 nine.time = 1;
-let two = document.querySelector("#two");
+let twopm = document.querySelector("#two");
 nine.time = 2;
-let three = document.querySelector("#three");
+let threepm = document.querySelector("#three");
 nine.time = 3;
-let four = document.querySelector("#four");
+let fourpm = document.querySelector("#four");
 nine.time = 4;
 
 
@@ -43,14 +48,10 @@ function hitSubmit(){
 window.onload = function(){
 submitButton = document.getElementsById("submit");
 submitButton.onclick = hitSubmit;
-
-
-
-
 }};
 
 
 console.log("local storage");
 for (i = 0; i < localStorage.length; i++)   {
     console.log(localStorage.key(i) + "=[" + localStorage.getItem(localStorage.key(i)) + "]");
-}
+};
