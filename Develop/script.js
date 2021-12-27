@@ -1,13 +1,7 @@
-const hourArray = [nineam, tenam, elevenam, twelve, onepm, twopm, threepm, fourpm];
-
-
-
-
-
 setInterval(function() {
 
-    let now = moment();
-    $("#currentTime").text(today.format("dddd, MMMM Do"));
+    let time = moment();
+    $("#currentTime").text(time.format("dddd, MMMM Do"));
 }, 1000);
 
 
@@ -40,6 +34,7 @@ nine.time = 3;
 let fourpm = document.querySelector("#four");
 nine.time = 4;
 
+const hourArray = [nineam, tenam, elevenam, twelve, onepm, twopm, threepm, fourpm];
 
 function hitSubmit(){
     localStorage.setItem([dataNumber='9'], JSON.stringify([dataNumber='9']));
