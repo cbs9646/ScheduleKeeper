@@ -1,4 +1,19 @@
 
+setInterval(function() {
+
+    let currentTime = moment();
+    $(#currentDay).text(today.format("dddd, MMMM Do"));
+}, 1000);
+
+
+
+
+
+
+
+
+
+
 function hitSubmit(){
     localStorage.setItem([dataNumber='9'], JSON.stringify([dataNumber='9']));
     console.log(localStorage);
@@ -12,7 +27,6 @@ submitButton.onclick = hitSubmit;
 
 }};
 
-var i;
 
 console.log("local storage");
 for (i = 0; i < localStorage.length; i++)   {
@@ -20,4 +34,4 @@ for (i = 0; i < localStorage.length; i++)   {
 }
 
 // let container = $(".container");
-// let currentTime = moment();
+
