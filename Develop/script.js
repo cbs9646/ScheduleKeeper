@@ -5,37 +5,51 @@ setInterval(function() {
 }, 1000);
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 let nineam = document.querySelector("#nine");
-nine.time = 9;
+nineam.time = 9;
 let tenam = document.querySelector("#ten");
-nine.time = 10;
+tenam.time = 10;
 let elevenam = document.querySelector("#eleven");
-nine.time = 11;
+elevenam.time = 11;
 let twelve = document.querySelector("#twelve");
-nine.time = 12;
+twelve.time = 12;
 let onepm = document.querySelector("#one");
-nine.time = 1;
+onepm.time = 1;
 let twopm = document.querySelector("#two");
-nine.time = 2;
+twopm.time = 2;
 let threepm = document.querySelector("#three");
-nine.time = 3;
+threepm.time = 3;
 let fourpm = document.querySelector("#four");
-nine.time = 4;
+fourpm.time = 4;
 
 const hourArray = [nineam, tenam, elevenam, twelve, onepm, twopm, threepm, fourpm];
 
+
+// TODO: time highlight logic
+
+let hourlySchedule;
+
+currentHour();
+
+function currentHour() {
+    for (let i = 0; i < hourArray.length; i++) {
+        hourlySchedule = hourArray[i].time;
+        if (moment().hours() === hourlySchedule) {
+            hourArray[i].setAttribute("style", "background-color: red");
+        } else if (moment().hours() < hourlySchedule) {
+            hourArray[i].setAttribute("style", "background-color: green");
+        } else if (moment().hours() > hourlySchedule) { 
+           hourArray[i].setAttribute("style", "background-color: grey");
+        }
+    }    
+};
+
+
+
+
+
+
+// TODO: local storage
 function hitSubmit(){
     localStorage.setItem([dataNumber='9'], JSON.stringify([dataNumber='9']));
     console.log(localStorage);
