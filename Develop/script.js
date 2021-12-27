@@ -33,5 +33,21 @@ for (i = 0; i < localStorage.length; i++)   {
     console.log(localStorage.key(i) + "=[" + localStorage.getItem(localStorage.key(i)) + "]");
 }
 
-// let container = $(".container");
 
+
+let nine = document.querySelector("#nine");
+nine.time = 9;
+let ten = document.querySelector("#ten");
+nine.time = 10;
+let eleven = document.querySelector("#eleven");
+nine.time = 11;
+let twelve = document.querySelector("#twelve");
+nine.time = 12;
+let one = document.querySelector("#one");
+nine.time = 1;
+let two = document.querySelector("#two");
+nine.time = 2;
+let three = document.querySelector("#three");
+nine.time = 3;
+let four = document.querySelector("#four");
+nine.time = 4;
