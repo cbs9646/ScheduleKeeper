@@ -1,4 +1,4 @@
-pull();
+// pull();
 
 setInterval(nowTime, 1000)
   let now = moment().format('HH');
@@ -36,6 +36,30 @@ $('.clear').on('click', function(){
     window.location.reload()
 });
 
+// let textAreas = document.querySelectorAll("textarea");
+// console.log(textAreas);
+
+
+// submitBtn = document.querySelectorAll("#submitBtn");
+
+// textAreas.forEach(textarea => {
+//     textarea.children[1].value = localStorage.getItem(textarea.id) ? localStorage.getItem(textarea.id): "";
+// })
+
+// submitBtn.forEach(textarea => {
+//     textarea.addEventListener("click", function (e) {
+//         e.preventDefault();
+//         textAreas.forEach(form => {
+//             let hourlyEvent = textarea.children[1].value;
+//             localStorage.setItem(textarea.id, hourlyEvent);
+//         })
+//     })
+// });
+
+
+
+
+
 
 let tTime;
 let hourlyTime;
@@ -44,7 +68,7 @@ $('button').on('click', delegateT);
 
 function delegateT(event){
     let selection = event.target;
-    hTask = selection.previousElementSibling.value;
+    hourlyTime = selection.previousElementSibling.value;
     tTime = selection.dataset.number;
     console.log(tTime);
 
@@ -52,7 +76,7 @@ function delegateT(event){
 }
 
 function pull(){
-    $("#nine .textarea").val(localStorage.getItem('9'));
+    $("#nine .textarea").val(localStorage.setItem('9'));
     $("#ten .textarea").val(localStorage.getItem('10'));
     $("#eleven .textarea").val(localStorage.getItem('11'));
     $("#twelve .textarea").val(localStorage.getItem('12'));
@@ -71,47 +95,6 @@ function pull(){
 
     
 
-// let nineam = document.querySelector("#nine");
-// nineam.time = 9;
-// let tenam = document.querySelector("#ten");
-// tenam.time = 10;
-// let elevenam = document.querySelector("#eleven");
-// elevenam.time = 11;
-// let twelve = document.querySelector("#twelve");
-// twelve.time = 12;
-// let onepm = document.querySelector("#one");
-// onepm.time = 1;
-// let twopm = document.querySelector("#two");
-// twopm.time = 2;
-// let threepm = document.querySelector("#three");
-// threepm.time = 3;
-// let fourpm = document.querySelector("#four");
-// fourpm.time = 4;
-
-// let hourArray = [nineam, tenam, elevenam, twelve, onepm, twopm, threepm, fourpm];
-
-
-// time highlight logic
-
-// let hourlySchedule;
-
-// currentHour();
-
-// function currentHour() {
-
-//     for (let i = 0; i < hourArray.length; i++) {
-//         hourlySchedule = hourArray[i].time;
-
-//         if (moment().hours() === hourlySchedule) {
-//             hourArray[i].setAttribute("style", "background-color: red");
-//             console.log()
-//         } else if (moment().hours() < hourlySchedule) {
-//             hourArray[i].setAttribute("style", "background-color: green");
-//         } else if (moment().hours() > hourlySchedule) { 
-//            hourArray[i].setAttribute("style", "background-color: grey");
-//         }
-//     }    
-// }
 
 
 
