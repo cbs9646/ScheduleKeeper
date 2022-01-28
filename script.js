@@ -1,12 +1,12 @@
 pull();
 
-setInterval(nowTime, 100)
-  let now = moment().format('');
+setInterval(nowTime, 1000)
+  let now = moment().format('HH');
 
 function nowTime(){
     let  current = moment();
     $('#day-time').text(current.format('dddd, MMMM Do'));
-   
+
     
 $('.textarea').each(function(){
     let block = $(this).attr('dataNumber');
@@ -56,11 +56,11 @@ function pull(){
     $("#ten .textarea").val(localStorage.getItem('10'));
     $("#eleven .textarea").val(localStorage.getItem('11'));
     $("#twelve .textarea").val(localStorage.getItem('12'));
-    $("#one .textarea").val(localStorage.getItem('1'));
-    $("#two .textarea").val(localStorage.getItem('2'));
-    $("#three .textarea").val(localStorage.getItem('3'));
-    $("#four .textarea").val(localStorage.getItem('4'));
-    $("#five .textarea").val(localStorage.getItem('5'));
+    $("#thirteen .textarea").val(localStorage.getItem('13'));
+    $("#fourteen .textarea").val(localStorage.getItem('14'));
+    $("#fifteen .textarea").val(localStorage.getItem('15'));
+    $("#sixteen .textarea").val(localStorage.getItem('16'));
+    $("#seventeen .textarea").val(localStorage.getItem('17'));
     
 }
 
