@@ -36,26 +36,6 @@ $('.clear').on('click', function(){
     window.location.reload()
 });
 
-// let textAreas = document.querySelectorAll("textarea");
-// console.log(textAreas);
-
-
-// submitBtn = document.querySelectorAll("#submitBtn");
-
-// textAreas.forEach(textarea => {
-//     textarea.children[1].value = localStorage.getItem(textarea.id) ? localStorage.getItem(textarea.id): "";
-// })
-
-// submitBtn.forEach(textarea => {
-//     textarea.addEventListener("click", function (e) {
-//         e.preventDefault();
-//         textAreas.forEach(form => {
-//             let hourlyEvent = textarea.children[1].value;
-//             localStorage.setItem(textarea.id, hourlyEvent);
-//         })
-//     })
-// });
-
 
 
 
@@ -99,20 +79,4 @@ function pull(){
 
 
 
-// hitSubmit();
 
-// // TODO: local storage
-// function hitSubmit(){
-//  if (localStorage.getItem)   localStorage.setItem([dataNumber='9'], JSON.stringify([dataNumber='9']));
-//     console.log(localStorage);
-
-// window.onload = function(){
-// submitButton = document.getElementsById("submit");
-// submitButton.onclick = hitSubmit;
-// }};
-
-
-// console.log("local storage");
-// for (i = 0; i < localStorage.length; i++)   {
-//     console.log(localStorage.key(i) + "=[" + localStorage.getItem(localStorage.key(i)) + "]");
-// };
