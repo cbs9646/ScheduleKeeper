@@ -1,4 +1,4 @@
-
+pull();
 
 setInterval(nowTime, 100)
   let now = moment().format('');
